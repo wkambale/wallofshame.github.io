@@ -228,17 +228,17 @@
         `;
       }
 
-      document.addEventListener("DOMContentLoaded", () => {
-        fetch("data2.json")
-          .then((response) => response.json())
-          .then((data) => {
-            const container = document.querySelector(".content");
-            data.forEach((card) => {
-              container.innerHTML += createCard(card);
-            });
-          })
-          .catch((error) => console.error("Error! No data", error));
-      });
+      // document.addEventListener("DOMContentLoaded", () => {
+      //   fetch("data2.json")
+      //     .then((response) => response.json())
+      //     .then((data) => {
+      //       const container = document.querySelector(".content");
+      //       data.forEach((card) => {
+      //         container.innerHTML += createCard(card);
+      //       });
+      //     })
+      //     .catch((error) => console.error("Error! No data", error));
+      // });
 
       document.addEventListener("DOMContentLoaded", () => {
         fetch("data.json")
